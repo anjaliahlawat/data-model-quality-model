@@ -1,0 +1,7 @@
+rules:
+- id: roundCube-Find-SQl
+  languages:
+    - php
+  message: Semgrep found a match
+  pattern: $DB->query(...)
+  severity: ERROR

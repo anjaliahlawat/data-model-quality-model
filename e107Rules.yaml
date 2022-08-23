@@ -1,0 +1,18 @@
+rules:
+- id: e107-Find-SQl
+  languages:
+    - php
+  message: Semgrep found a match
+  pattern: $sql->$F
+  severity: ERROR
+- id: e107-Find-SQl2
+  languages:
+    - php
+  message: Semgrep found a match
+  pattern: e107::getDb()->$F
+  severity: ERROR
+
+
+
+
+  

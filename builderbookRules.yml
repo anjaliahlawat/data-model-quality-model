@@ -1,0 +1,77 @@
+# mongoose 
+# Model.deleteMany()
+# Model.deleteOne()
+# Model.find()
+# Model.findById()
+# Model.findByIdAndDelete()
+# Model.findByIdAndRemove()
+# Model.findByIdAndUpdate()
+# Model.findOne()
+# Model.findOneAndDelete()
+# Model.findOneAndRemove()
+# Model.findOneAndReplace()
+# Model.findOneAndUpdate()
+# Model.replaceOne()
+# Model.updateMany()
+# Model.updateOne()
+# Model.update()
+# Model.insertMany()
+# Model.remove()
+# Model.bulkSave()
+# Model.bulkWrite()
+
+rules:
+- id: Find-find
+  languages:
+    - javascript
+  message: Semgrep found a match
+  pattern: $V.find(...)
+  severity: ERROR
+- id: Find-find2
+  languages:
+    - javascript
+  message: Semgrep found a match
+  pattern: $V.findById(...)
+  severity: ERROR
+- id: Find-find3
+  languages:
+    - javascript
+  message: Semgrep found a match
+  pattern: $V.findOneAndDelete(...)
+  severity: ERROR
+- id: Find-find4
+  languages:
+    - javascript
+  message: Semgrep found a match
+  pattern: $V.findOneAndRemove(...)
+  severity: ERROR
+- id: Find-find5
+  languages:
+    - javascript
+  message: Semgrep found a match
+  pattern: $V.findByIdAndUpdate(...)
+  severity: ERROR
+- id: Find-find6
+  languages:
+    - javascript
+  message: Semgrep found a match
+  pattern: $V.findOne(...)
+  severity: ERROR
+- id: Find-update
+  languages:
+    - javascript
+  message: Semgrep found a match
+  pattern: $V.updateOne(...)
+  severity: ERROR
+- id: Find-update2
+  languages:
+    - javascript
+  message: Semgrep found a match
+  pattern: $V.updateMany(...)
+  severity: ERROR
+- id: Find-insert
+  languages:
+    - javascript
+  message: Semgrep found a match
+  pattern: $V.create(...)
+  severity: ERROR

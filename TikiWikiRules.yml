@@ -1,0 +1,7 @@
+rules:
+- id: Tiki-Find-SQl
+  languages:
+    - php
+  message: Semgrep found a match
+  pattern: $query = $S
+  severity: ERROR

@@ -1,0 +1,31 @@
+rules:
+- id: Find-Select
+  languages:
+    - php
+  message: Semgrep found a match
+  pattern: $F->select($V)
+  severity: ERROR
+- id: Find-Update
+  languages:
+    - php
+  message: Semgrep found a match
+  pattern: $F->update($V)
+  severity: ERROR
+- id: Find-Delete
+  languages:
+    - php
+  message: Semgrep found a match
+  pattern: $F->delete($V)
+  severity: ERROR
+- id: Find-Insert
+  languages:
+    - php
+  message: Semgrep found a match
+  pattern: $F->insert($V)
+  severity: ERROR
+- id: Find-Queries
+  languages:
+    - php
+  message: Semgrep found a match
+  pattern: $db->getQuery(...)
+  severity: ERROR

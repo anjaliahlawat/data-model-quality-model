@@ -1,0 +1,7 @@
+rules:
+- id: pos-Find-Queries
+  languages:
+    - php
+  message: Semgrep found a match
+  pattern: $F->db
+  severity: ERROR

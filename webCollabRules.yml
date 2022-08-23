@@ -1,0 +1,13 @@
+rules:
+- id: webCollab-Find-Queries
+  languages:
+    - php
+  message: Semgrep found a match
+  pattern: db_prepare(...)
+  severity: ERROR
+- id: webCollab-Find-Queries2
+  languages:
+    - php
+  message: Semgrep found a match
+  pattern: db_query(...)
+  severity: ERROR

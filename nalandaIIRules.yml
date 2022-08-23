@@ -1,0 +1,31 @@
+rules:
+- id: nalanda-Find-Update
+  languages:
+    - python
+  message: Semgrep found a match
+  pattern: update(...)
+  severity: ERROR
+- id: nalanda-Find-Delete
+  languages:
+    - python
+  message: Semgrep found a match
+  pattern: delete()
+  severity: ERROR
+- id: nalanda-Find-Select
+  languages:
+    - python
+  message: Semgrep found a match
+  pattern: select(...)
+  severity: ERROR
+- id: nalanda-Find-Select2
+  languages:
+    - python
+  message: Semgrep found a match
+  pattern: $V.select()
+  severity: ERROR
+- id: nalanda-Find-Query
+  languages:
+    - python
+  message: Semgrep found a match
+  pattern: $V.query(...)
+  severity: ERROR

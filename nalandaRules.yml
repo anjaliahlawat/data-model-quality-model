@@ -1,0 +1,13 @@
+rules:
+- id: nalanda-Find-Select
+  languages:
+    - python
+  message: Semgrep found a match
+  pattern: $V.objects.$F(...)
+  severity: ERROR
+- id: nalanda-Find-Update
+  languages:
+    - python
+  message: Semgrep found a match
+  pattern: $V.objects.$F()
+  severity: ERROR

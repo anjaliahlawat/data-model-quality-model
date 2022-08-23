@@ -1,0 +1,25 @@
+rules:
+- id: Find-Queries
+  languages:
+    - php
+  message: Semgrep found a match
+  pattern: $db->exec(...)
+  severity: ERROR
+- id: Find-Queries2
+  languages:
+    - php
+  message: Semgrep found a match
+  pattern: $query = "..."
+  severity: ERROR
+- id: Find-Queries3
+  languages:
+    - php
+  message: Semgrep found a match
+  pattern: $F->db->exec(...)
+  severity: ERROR
+- id: Find-Queries4
+  languages:
+    - php
+  message: Semgrep found a match
+  pattern: $F->get(...)->exec(...)
+  severity: ERROR

@@ -1,0 +1,7 @@
+rules:
+- id: webERP-Find-Queries
+  languages:
+    - php
+  message: Semgrep found a match
+  pattern: DB_query(...)
+  severity: ERROR

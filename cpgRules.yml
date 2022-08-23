@@ -1,0 +1,13 @@
+rules:
+- id: Coppermine-Find-Queries
+  languages:
+    - php
+  message: Semgrep found a match
+  pattern: cpg_db_query($V)
+  severity: ERROR
+- id: Coppermine-Find-Queries2
+  languages:
+    - php
+  message: Semgrep found a match
+  pattern: $F->query($sql)
+  severity: ERROR

@@ -1,0 +1,19 @@
+rules:
+- id: PrestaShop-Find-Queries
+  languages:
+    - php
+  message: Semgrep found a match
+  pattern: $query->$F
+  severity: ERROR
+- id: PrestaShop-Find-Queries2
+  languages:
+    - php
+  message: Semgrep found a match
+  pattern: Db::getInstance(_PS_USE_SQL_SLAVE_)->$F
+  severity: ERROR
+- id: PrestaShop-Find-Queries3
+  languages:
+    - php
+  message: Semgrep found a match
+  pattern: Db::getInstance()->$F
+  severity: ERROR
